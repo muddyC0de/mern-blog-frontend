@@ -1,0 +1,74 @@
+.root {
+  color: #fff;
+  .title {
+    margin-bottom: 20px;
+    input {
+      font-size: 42px;
+      font-weight: 900;
+    }
+
+    div {
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .image {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .tags {
+    margin: 15px 0;
+  }
+
+  .editor {
+    margin: 30px -30px;
+    li {
+      list-style-type: disc;
+    }
+    :global {
+      .cm-s-easymde {
+        border: 0;
+        font-size: 22px;
+      }
+      .editor-toolbar {
+        border: 0;
+        background-color: #1e1e1e;
+        color: #a3a3a3;
+        padding: 10px 22px 10px 22px;
+
+        button {
+          color: #a3a3a3;
+
+          &:hover {
+            background-color: #1e1e1e57;
+          }
+        }
+      }
+
+      .CodeMirror-scroll {
+        padding: 0 14px 50px 14px !important;
+      }
+
+      .CodeMirror {
+        color: #fff;
+
+        background: #1e1e1e;
+      }
+      .CodeMirror-cursor {
+        border-color: #fff;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+
+    button {
+      margin-right: 15px;
+    }
+  }
+}

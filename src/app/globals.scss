@@ -1,0 +1,42 @@
+* {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+}
+a {
+  color: black;
+}
+body {
+  margin: 0;
+  background-color: rgb(15, 18, 20);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.secondary {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+  text-align: left;
+  margin-top: 6px;
+  margin-right: 14px;
+  margin-bottom: 0;
+  margin-left: 14px;
+}
+.error {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+  text-align: left;
+  margin-top: 3px;
+  margin-right: 14px;
+  margin-bottom: 0;
+  margin-left: 14px;
+  color: #f44336;
+}

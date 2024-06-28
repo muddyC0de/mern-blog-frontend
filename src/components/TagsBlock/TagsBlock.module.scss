@@ -1,0 +1,43 @@
+.root {
+  background-color: #1e1e1e;
+  width: 400px;
+  height: max-content;
+  transition: height 1s ease-in-out;
+  border-radius: 5px;
+  padding-top: 12px;
+  color: #fff;
+  h6 {
+    font-size: 19px;
+    margin: 0;
+    font-weight: 600;
+    padding: 15px 15px 0;
+    margin-bottom: 10px;
+  }
+
+  .count {
+    padding: 0px 10px;
+    height: 22px;
+    border: 1px solid rgba(61, 71, 81, 0.3);
+    border-radius: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .topBlock {
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    transition: height 1s ease-in-out;
+
+    li {
+      color: #fff;
+    }
+
+    svg {
+      fill: rgb(255 255 255 / 62%);
+    }
+  }
+}

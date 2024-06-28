@@ -1,0 +1,19 @@
+.root {
+  .content {
+    display: flex;
+  }
+
+  .postItems {
+    width: 756px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 25px;
+    margin-right: 50px;
+    height: max-content;
+  }
+
+  .tag {
+    color: #979797;
+  }
+}
