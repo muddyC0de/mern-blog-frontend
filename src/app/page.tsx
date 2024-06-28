@@ -10,7 +10,6 @@ import { AppDispatch, RootState } from "@/redux/store";
 import { PostSkeleton } from "@/components/PostItem/PostSkeleton";
 import { fetchPosts, fetchPostsWithTag } from "@/redux/slices/posts";
 import { useParams } from "next/navigation";
-import { ErrorBlock } from "@/components/ErrorBlock";
 import autoAnimate from "@formkit/auto-animate";
 import { Comment } from "@/redux/slices/comments";
 export type User = {
@@ -51,21 +50,6 @@ export default function Home() {
     }
   }, [dispatch, tag]);
 
-  if (tag && status === "error" && posts.length === 0) {
-    return (
-      <ErrorBlock
-        title="Не вдалось знайти статті за вказаним тегом"
-        imageUrl="/img/search-error.png"
-      />
-    );
-  } else if (!tag && posts.length === 0 && status === "error") {
-    return (
-      <ErrorBlock
-        title="Не вдалось отримати статті"
-        imageUrl="/img/error.png"
-      />
-    );
-  }
   return (
     <div className={styles.root}>
       <Sort />

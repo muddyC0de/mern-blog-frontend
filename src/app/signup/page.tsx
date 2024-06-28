@@ -92,7 +92,9 @@ export default function Signup() {
           width={100}
           height={100}
           src={
-            imageUrl ? `http://localhost:4444${imageUrl}` : "/img/noavatar.png"
+            imageUrl
+              ? `${process.env.REACT_APP_API_URL}${imageUrl}`
+              : "/img/noavatar.png"
           }
           alt=""
         />
