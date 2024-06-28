@@ -101,7 +101,8 @@ export default function CreatePage() {
   }, []);
 
   if (!isAuth) {
-    return replace("/");
+    replace("/");
+    return null;
   }
   return (
     <div className={styles.root}>
