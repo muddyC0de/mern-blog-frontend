@@ -2,7 +2,8 @@
 "use client";
 
 import React from "react";
-import SimpleMDE from "react-simplemde-editor";
+import dynamic from "next/dynamic";
+
 import "easymde/dist/easymde.min.css";
 import styles from "./Page.module.scss";
 import axios from "../../../axios";
@@ -16,6 +17,10 @@ import { fetchCreatePost, fetchEditPost } from "@/redux/slices/posts";
 import { LoadingButton } from "@mui/lab";
 import { Option } from "@/components/Select/Select";
 import { selectIsAuth } from "@/redux/slices/auth";
+const SimpleMDE = dynamic(() => import("react-simplemde-editor"), {
+  ssr: false,
+});
+
 interface PostData {
   title: string;
   text: string;
