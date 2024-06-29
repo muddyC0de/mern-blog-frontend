@@ -139,7 +139,7 @@ export default function CreatePage() {
             </Button>
             <img
               className={styles.image}
-              src={`${process.env.REACT_APP_API_URL}${imageUrl}`}
+              src={`${process.env.NEXT_PUBLIC_API_URL}${imageUrl}`}
               alt="Uploaded"
             />
           </>

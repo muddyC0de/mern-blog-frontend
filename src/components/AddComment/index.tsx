@@ -29,7 +29,7 @@ export const AddComment = () => {
       <div className={styles.root}>
         <Avatar
           classes={{ root: styles.avatar }}
-          src={`${process.env.REACT_APP_API_URL}` + data?.avatarUrl}
+          src={`${process.env.NEXT_PUBLIC_API_URL}` + data?.avatarUrl}
         >
           {data?.fullname[0]}
         </Avatar>

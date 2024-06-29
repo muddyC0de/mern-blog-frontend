@@ -40,7 +40,7 @@ export const CommentsBlock = () => {
                   <Avatar
                     alt="avatar"
                     src={
-                      `${process.env.REACT_APP_API_URL}` +
+                      `${process.env.NEXT_PUBLIC_API_URL}` +
                       (data?._id === obj.user
                         ? data?.avatarUrl
                         : obj.user.avatarUrl)

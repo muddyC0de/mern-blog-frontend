@@ -93,7 +93,7 @@ export default function Signup() {
           height={100}
           src={
             imageUrl
-              ? `${process.env.REACT_APP_API_URL}${imageUrl}`
+              ? `${process.env.NEXT_PUBLIC_API_URL}${imageUrl}`
               : "/img/noavatar.png"
           }
           alt=""

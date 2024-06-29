@@ -92,7 +92,7 @@ export const PostItem: React.FC<PostItemProps> = ({
 
       {imageUrl ? (
         <div className={styles.img}>
-          <img src={`${process.env.REACT_APP_API_URL}${imageUrl}`} alt="" />
+          <img src={`${process.env.NEXT_PUBLIC_API_URL}${imageUrl}`} alt="" />
         </div>
       ) : (
         ""
@@ -103,7 +103,7 @@ export const PostItem: React.FC<PostItemProps> = ({
           <img
             src={
               user.avatarUrl
-                ? `${process.env.REACT_APP_API_URL}${user.avatarUrl}`
+                ? `${process.env.NEXT_PUBLIC_API_URL}${user.avatarUrl}`
                 : "/img/noavatar.png"
             }
             alt=""
